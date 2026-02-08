@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="screen">
+            <h1 class="title">贪吃蛇游戏</h1>
+            <div class="instructions">
+                <p>使用方向键控制蛇的移动</p>
+                <p>吃到红色食物得分</p>
+                <p>撞到墙壁或自己游戏结束</p>
+                <p class="start-hint">按任意键开始游戏</p>
+            </div>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1 class="game-over-title">游戏结束!</h1>
+            <p class="final-score">最终得分: <span id="final-score">0</span></p>
+            <p id="newRecord" class="new-record hidden">新纪录!</p>
+            <p class="restart-hint">按空格键重新开始</p>
+            <p class="quit-hint">按ESC键退出游戏</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
